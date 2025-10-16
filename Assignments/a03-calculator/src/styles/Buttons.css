@@ -1,0 +1,60 @@
+.button {
+  padding: 1em 2em;
+  margin: 2px;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 0.5em;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 300ms;
+  height: 55px;
+  width: 75px;
+
+  &.double-height {
+    height: 114px;
+  }
+  &.double-width {
+    width: 150px;
+  }
+
+  &.clear {
+    background-color: red;
+    color: white;
+  }
+  &.memory {
+    background-color: yellow;
+  }
+  &.number {
+    background-color: grey;
+    color: white;
+  }
+  &.operator {
+    background-color: orange;
+  }
+  &.percent {
+    background-color: white;
+  }
+  &.sign {
+    background-color: gray;
+    color: white;
+  }
+  &.sqrt {
+    background-color: white;
+  }
+  &.enter {
+    background-color: blue;
+    color: white;
+  }
+
+  &.empty,
+  &.empty:hover {
+    display: none;
+    pointer-events: none;
+    cursor: none;
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+  }
+}

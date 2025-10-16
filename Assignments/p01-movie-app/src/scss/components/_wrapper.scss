@@ -1,0 +1,26 @@
+// Wrapper
+
+@use "../base/settings" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/functions" as *;
+
+.wrapper {
+  max-width: 700px;
+  background-color: $dark;
+  @include mc();
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery a {
+  min-width: 200px;
+  width: 30%;
+}
+
+.gallery-single-item {
+  min-height: 500px;
+  background-color: $light;
+}

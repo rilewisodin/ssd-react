@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 75px);
+
+  gap: 2px;
+  margin: 2px;
+}
+
+div.input-container {
+  display: grid;
+  place-items: center end; /* Centers both vertically and horizontally */
+  height: 55px;
+  width: 460px;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  margin: 2px;
+}
+
+.display-input {
+  font-size: 24px;
+  padding: 8px;
+  margin: 0;
+  font-weight: bold;
+}

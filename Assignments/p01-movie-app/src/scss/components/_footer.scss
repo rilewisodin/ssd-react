@@ -1,0 +1,15 @@
+// Footer
+
+@use "../base/settings" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+  padding: $section-padding;
+  color: $light;
+  background-color: $primary;
+  font-size: 0.8rem;
+  text-align: end;
+  p {
+    @include flatten;
+  }
+}

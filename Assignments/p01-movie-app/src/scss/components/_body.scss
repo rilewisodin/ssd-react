@@ -1,0 +1,24 @@
+// Body
+
+@use "../base/settings" as *;
+
+body {
+  background-color: $dark;
+}
+
+.character-info {
+  padding: 1em;
+  background-color: $light;
+  figure {
+    margin: 0;
+    position: relative;
+    figcaption {
+      font-size: 3.8em;
+      color: #fff;
+      text-shadow: 0 0.2rem 10px #000;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+}

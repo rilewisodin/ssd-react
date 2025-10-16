@@ -1,0 +1,31 @@
+.boardMember {
+  display: flex;
+  padding: 10px;
+  border: 1px dotted #ccc;
+  background-color: #fff;
+  box-shadow: 2px 3px 5px 2px #e1e1e1;
+  border-radius: 10px;
+}
+
+@media (min-width: 620px) {
+  .boardMember {
+    padding: 10px;
+  }
+
+  .kittensBoardOfDirectors .boardMember {
+    border: 1px dotted #ccc;
+  }
+}
+
+.boardMember .profilePicture {
+  flex: 0 0 80px;
+  margin-right: 10px;
+}
+
+.boardMember .profilePicture img {
+  border-radius: 10px;
+}
+
+.boardMember .boardMember p {
+  margin: 0 0 5px;
+}

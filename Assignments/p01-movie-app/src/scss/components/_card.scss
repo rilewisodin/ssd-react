@@ -1,0 +1,108 @@
+// Card
+
+@use "../base/settings" as *;
+@use '../utilities/functions' as *;
+
+.main-nav a.active {
+  background-color: lightgray;
+  color: black;
+}
+
+.main-nav a.active:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.movie-categories {
+  margin-left: 12px;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  grid-auto-flow: row;
+  width: 100%;
+}
+
+.movie-container .card > * {
+  margin-bottom: 12px;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  height: 400px;
+  padding: 8px;
+}
+
+.card::before {
+  content: "";
+  position: absolute; /* Position it inside the .backdrop container */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Apply a faint overlay to the background */
+  pointer-events: none;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures the image fills the 200x200 space */
+  margin-bottom: 8px;
+}
+
+.card-missing {
+  width: 200px;
+  height: 200px;
+  font-size: 200px;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card-label,
+.card-title {
+  font-weight: 700;
+}
+
+.card-title.detail {
+  font-size: larger;
+}
+
+.card-icon {
+  margin-right: 20px;
+}
+
+.card-icon:hover,
+.card-icon.watch,
+.card-icon.favourite {
+  color: red;
+}
+
+.card-icon,
+button {
+  cursor: pointer;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.row > :first-child {
+  grid-column: 1;
+}
+
+.row > :last-child {
+  grid-column: 2;
+}
